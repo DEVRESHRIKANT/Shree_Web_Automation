@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Shree.master.cs" Inherits="MotelMa.Shree" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="ShreeMenu" style="width:100%; padding:0; border:solid">
+            <asp:ContentPlaceHolder ID="MenuBar"  runat="server">        
+            </asp:ContentPlaceHolder>
+        </div>    
+        <table style="width:100%; padding:0"">
+            <tr>
+                <td>
+                    <div id="ShreeTop" style="width:100%; padding:0; border:solid">    
+                        <asp:ContentPlaceHolder id="TopBar"  runat="server">
+                        </asp:ContentPlaceHolder>                  
+                    </div>
+                </td>    
+            </tr>
+        </table>
+        <div id="ShreeBanner" style="width:100%; padding:0; border:solid">
+            <asp:ContentPlaceHolder ID="BannerBar" runat="server">        
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="ShreePictures" style="width:100%; padding:0; border:solid">
+            <asp:ContentPlaceHolder ID="Motel_Pictures" runat="server">        
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="ShreeStatus" style="width:100%; padding:0; border:solid">
+            <asp:ContentPlaceHolder ID="StatusBar"  runat="server">        
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- Middle Section Details -->    
+        <table style="width:100%">
+        <tr style="padding:0">
+            <td style="border:solid; vertical-align:top; width:15%; padding:0">
+                <div id="ShreeLeft" style="vertical-align:top; padding:0">
+                    <asp:ContentPlaceHolder id="LeftBar" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </td>            
+            <td style="border:solid; vertical-align:top; width:70%; padding:0">		
+                <div id="ShreeMiddle" class="container body-content" style="vertical-align:top; padding:0">
+                    <asp:ContentPlaceHolder id="MiddleBar" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </td>
+            <td style="border:solid; vertical-align:top; width:15%; padding:0"">
+                <div id="ShreeRight" style="padding:0">    
+                    <asp:ContentPlaceHolder id="RightBar" runat="server">                 
+                    </asp:ContentPlaceHolder>               
+                </div>
+             </td>
+        </tr>
+        </table>
+        <!-- Bottom Bar Header -->
+        <table style="width:100%; padding:0"">
+            <tr>
+                <td>
+                    <div id="ShreeBottom" style="width:100%; padding:0; border:solid">    
+                        <asp:ContentPlaceHolder id="BottomBar" runat="server">                                               
+                        </asp:ContentPlaceHolder>    
+                    </div>
+                </td>    
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

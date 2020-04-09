@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7EB56D51-CFED-4215-B3AD-DBAC686C9B03}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MotelMa</RootNamespace>
+    <AssemblyName>MotelMa</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualStudio.Services.WebApi, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AAA.aspx" />
+    <Content Include="AARP.aspx" />
+    <Content Include="Attractions.aspx" />
+    <Content Include="Available.aspx" />
+    <Content Include="BannerBar.ascx" />
+    <Content Include="BottomBar.ascx" />
+    <Content Include="Careers.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="css\calendar-blue.css" />
+    <Content Include="css\ImageStyle.css" />
+    <Content Include="CustomerCare.aspx" />
+    <Content Include="Deals.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="EmailUs.aspx" />
+    <Content Include="FAQ.aspx" />
+    <Content Include="Group.aspx" />
+    <Content Include="HeaderImages.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Images\AAA.jpg" />
+    <Content Include="Images\AARP.png" />
+    <Content Include="Images\AARP10.jpg" />
+    <Content Include="Images\banner1.jpg" />
+    <Content Include="Images\banner2.jpg" />
+    <Content Include="Images\banner3.jpg" />
+    <Content Include="Images\banner4.jpg" />
+    <Content Include="Images\banner5.jpg" />
+    <Content Include="Images\banner6.jpg" />
+    <Content Include="Images\banner7.jpg" />
+    <Content Include="Images\Breakfast.jpg" />
+    <Content Include="Images\Breakfast1.jpg" />
+    <Content Include="Images\calender.png" />
+    <Content Include="Images\CashAccept.jpg" />
+    <Content Include="Images\corporate.jpg" />
+    <Content Include="Images\corporate1.jpg" />
+    <Content Include="Images\CreditCards.jpg" />
+    <Content Include="Images\Dog_Friendly.jpg" />
+    <Content Include="Images\DoubleDekar2.JPG" />
+    <Content Include="Images\DoubleDeker.JPG" />
+    <Content Include="Images\DoubleDeker1.JPG" />
+    <Content Include="Images\DoubleDeker3.JPG" />
+    <Content Include="Images\facebook.jpg" />
+    <Content Include="Images\Free_CableTV.jpg" />
+    <Content Include="Images\Free_WiFi.jpg" />
+    <Content Include="Images\GooglePlus.jpg" />
+    <Content Include="Images\googleplus1.jpg" />
+    <Content Include="Images\GreenValley1.jpg" />
+    <Content Include="Images\GreenValley2.jpg" />
+    <Content Include="Images\GreenValley3.jpg" />
+    <Content Include="Images\GreenValley4.jpg" />
+    <Content Include="Images\GreenValley5.jpg" />
+    <Content Include="Images\GreenValley6.jpg" />
+    <Content Include="Images\info1.jpg" />
+    <Content Include="Images\Instagram.jpg" />
+    <Content Include="Images\InternetWiFi.jpg" />
+    <Content Include="Images\linkedin.jpg" />
+    <Content Include="Images\Military.jpg" />
+    <Content Include="Images\Motel_Ameniies.JPG" />
+    <Content Include="Images\Motel_Bathroom.jpg" />
+    <Content Include="Images\Motel_Breakfast.jpg" />
+    <Content Include="Images\Motel_Lobby.jpg" />
+    <Content Include="Images\Motel_Picnic.jpg" />
+    <Content Include="Images\Motel_Picnic2.jpg" />
+    <Content Include="Images\Motel_Room1.JPG" />
+    <Content Include="Images\Motel_Sign.JPG" />
+    <Content Include="Images\Motel_Sign1.jpg" />
+    <Content Include="Images\Motel_Sign2.jpg" />
+    <Content Include="Images\Ohm.jpg" />
+    <Content Include="Images\pinterest.jpg" />
+    <Content Include="Images\ReturnCustomer.png" />
+    <Content Include="Images\Shree.jpg" />
+    <Content Include="Images\Shree1.jpg" />
+    <Content Include="Images\Shree2.jpg" />
+    <Content Include="Images\Shree4.jpg" />
+    <Content Include="Images\Single_Double.JPG" />
+    <Content Include="Images\Swimming pool.jpg" />
+    <Content Include="Images\twitter.jpg" />
+    <Content Include="Images\Twitter.png" />
+    <Content Include="Images\Twitter1.jpg" />
+    <Content Include="Images\twitter2.jpg" />
+    <Content Include="Images\Two_Storey.jpg" />
+    <Content Include="Images\WeeklyRates.jpg" />
+    <Content Include="Images\Youtube.jpg" />
+    <Content Include="Images\Youtube.png" />
+    <Content Include="Images\Youtube1.jpg" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\DetailsView.js" />
+    <Content Include="js\Focus.js" />
+    <Content Include="js\GridView.js" />
+    <Content Include="WUC_Video.ascx" />
+    <None Include="js\jquery-1.10.2.intellisense.js" />
+    <Content Include="js\ImageQuery.js" />
+    <Content Include="js\jquery-1.10.2.js" />
+    <Content Include="js\jquery-1.10.2.min.js" />
+    <Content Include="js\Menu.js" />
+    <Content Include="js\MenuStandards.js" />
+    <Content Include="js\MicrosoftAjax.js" />
+    <Content Include="js\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="js\MicrosoftAjaxComponentModel.js" />
+    <Content Include="js\MicrosoftAjaxCore.js" />
+    <Content Include="js\MicrosoftAjaxGlobalization.js" />
+    <Content Include="js\MicrosoftAjaxHistory.js" />
+    <Content Include="js\MicrosoftAjaxNetwork.js" />
+    <Content Include="js\MicrosoftAjaxSerialization.js" />
+    <Content Include="js\MicrosoftAjaxTimer.js" />
+    <Content Include="js\MicrosoftAjaxWebForms.js" />
+    <Content Include="js\MicrosoftAjaxWebServices.js" />
+    <Content Include="js\modernizr-2.6.2.js" />
+    <Content Include="js\respond.js" />
+    <Content Include="js\respond.min.js" />
+    <Content Include="js\SmartNav.js" />
+    <Content Include="js\TreeView.js" />
+    <Content Include="js\WebForms.js" />
+    <Content Include="js\WebParts.js" />
+    <Content Include="js\WebUIValidation.js" />
+    <None Include="js\_references.js" />
+    <Content Include="LeftBar.ascx" />
+    <Content Include="Locations.aspx" />
+    <Content Include="Map.aspx" />
+    <Content Include="MenuBar.ascx" />
+    <Content Include="Military.aspx" />
+    <Content Include="Motel_Pictures.ascx" />
+    <Content Include="MyReservation.aspx" />
+    <Content Include="PetFriendly.aspx" />
+    <Content Include="Privacy.aspx" />
+    <Content Include="ReservationEntry.aspx" />
+    <Content Include="RightBar.ascx" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\calendar-en.min.js" />
+    <Content Include="scripts\DetailsView.js" />
+    <Content Include="scripts\Focus.js" />
+    <Content Include="scripts\GridView.js" />
+    <Content Include="packages.config" />
+    <None Include="scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="scripts\jquery-1.10.2.js" />
+    <Content Include="scripts\jquery-1.10.2.min.js" />
+    <None Include="scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="scripts\jquery-1.4.1.js" />
+    <Content Include="scripts\jquery-1.4.1.min.js" />
+    <Content Include="scripts\jquery.dynDateTime.min.js" />
+    <Content Include="scripts\Menu.js" />
+    <Content Include="scripts\MenuStandards.js" />
+    <Content Include="scripts\MicrosoftAjax.js" />
+    <Content Include="scripts\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="scripts\MicrosoftAjaxComponentModel.js" />
+    <Content Include="scripts\MicrosoftAjaxCore.js" />
+    <Content Include="scripts\MicrosoftAjaxGlobalization.js" />
+    <Content Include="scripts\MicrosoftAjaxHistory.js" />
+    <Content Include="scripts\MicrosoftAjaxNetwork.js" />
+    <Content Include="scripts\MicrosoftAjaxSerialization.js" />
+    <Content Include="scripts\MicrosoftAjaxTimer.js" />
+    <Content Include="scripts\MicrosoftAjaxWebForms.js" />
+    <Content Include="scripts\MicrosoftAjaxWebServices.js" />
+    <Content Include="scripts\modernizr-2.6.2.js" />
+    <Content Include="scripts\respond.js" />
+    <Content Include="scripts\respond.min.js" />
+    <Content Include="scripts\SmartNav.js" />
+    <Content Include="scripts\TreeView.js" />
+    <Content Include="scripts\WebForms.js" />
+    <Content Include="scripts\WebParts.js" />
+    <Content Include="scripts\WebUIValidation.js" />
+    <None Include="scripts\_references.js" />
+    <Content Include="StatusBar.ascx" />
+    <Content Include="TermsOfUse.aspx" />
+    <Content Include="TopBar.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AAA.aspx.cs">
+      <DependentUpon>AAA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AAA.aspx.designer.cs">
+      <DependentUpon>AAA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AARP.aspx.cs">
+      <DependentUpon>AARP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AARP.aspx.designer.cs">
+      <DependentUpon>AARP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attractions.aspx.cs">
+      <DependentUpon>Attractions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attractions.aspx.designer.cs">
+      <DependentUpon>Attractions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Available.aspx.cs">
+      <DependentUpon>Available.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Available.aspx.designer.cs">
+      <DependentUpon>Available.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BannerBar.ascx.cs">
+      <DependentUpon>BannerBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BannerBar.ascx.designer.cs">
+      <DependentUpon>BannerBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BottomBar.ascx.cs">
+      <DependentUpon>BottomBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BottomBar.ascx.designer.cs">
+      <DependentUpon>BottomBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Careers.aspx.cs">
+      <DependentUpon>Careers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Careers.aspx.designer.cs">
+      <DependentUpon>Careers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CustomerRegistrationController.cs" />
+    <Compile Include="Controllers\CustomerRetriveController.cs" />
+    <Compile Include="CustomerCare.aspx.cs">
+      <DependentUpon>CustomerCare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerCare.aspx.designer.cs">
+      <DependentUpon>CustomerCare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deals.aspx.cs">
+      <DependentUpon>Deals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Deals.aspx.designer.cs">
+      <DependentUpon>Deals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmailUs.aspx.cs">
+      <DependentUpon>EmailUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmailUs.aspx.designer.cs">
+      <DependentUpon>EmailUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Group.aspx.cs">
+      <DependentUpon>Group.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Group.aspx.designer.cs">
+      <DependentUpon>Group.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeftBar.ascx.cs">
+      <DependentUpon>LeftBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeftBar.ascx.designer.cs">
+      <DependentUpon>LeftBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Locations.aspx.cs">
+      <DependentUpon>Locations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Locations.aspx.designer.cs">
+      <DependentUpon>Locations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map.aspx.cs">
+      <DependentUpon>Map.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map.aspx.designer.cs">
+      <DependentUpon>Map.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuBar.ascx.cs">
+      <DependentUpon>MenuBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuBar.ascx.designer.cs">
+      <DependentUpon>MenuBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Military.aspx.cs">
+      <DependentUpon>Military.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Military.aspx.designer.cs">
+      <DependentUpon>Military.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\CustomerRegistration.cs" />
+    <Compile Include="Models\CustomerRegistrationReply.cs" />
+    <Compile Include="Motel_Pictures.ascx.cs">
+      <DependentUpon>Motel_Pictures.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Motel_Pictures.ascx.designer.cs">
+      <DependentUpon>Motel_Pictures.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyReservation.aspx.cs">
+      <DependentUpon>MyReservation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyReservation.aspx.designer.cs">
+      <DependentUpon>MyReservation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PetFriendly.aspx.cs">
+      <DependentUpon>PetFriendly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PetFriendly.aspx.designer.cs">
+      <DependentUpon>PetFriendly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Privacy.aspx.cs">
+      <DependentUpon>Privacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privacy.aspx.designer.cs">
+      <DependentUpon>Privacy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReservationEntry.aspx.cs">
+      <DependentUpon>ReservationEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReservationEntry.aspx.designer.cs">
+      <DependentUpon>ReservationEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RightBar.ascx.cs">
+      <DependentUpon>RightBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RightBar.ascx.designer.cs">
+      <DependentUpon>RightBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shree.Master.cs">
+      <DependentUpon>Shree.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shree.Master.designer.cs">
+      <DependentUpon>Shree.Master</DependentUpon>
+    </Compile>
+    <Compile Include="StatusBar.ascx.cs">
+      <DependentUpon>StatusBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StatusBar.ascx.designer.cs">
+      <DependentUpon>StatusBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TermsOfUse.aspx.cs">
+      <DependentUpon>TermsOfUse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TermsOfUse.aspx.designer.cs">
+      <DependentUpon>TermsOfUse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TopBar.ascx.cs">
+      <DependentUpon>TopBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TopBar.ascx.designer.cs">
+      <DependentUpon>TopBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WUC_Video.ascx.cs">
+      <DependentUpon>WUC_Video.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WUC_Video.ascx.designer.cs">
+      <DependentUpon>WUC_Video.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Shree.Master" />
+    <Content Include="js\jquery-1.10.2.min.map" />
+    <Content Include="scripts\jquery-1.10.2.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11900</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:11900/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

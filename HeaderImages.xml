@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Advertisements>
+  <Ad>
+    <ImageUrl>~/Images/Motel_Picnic2.jpg</ImageUrl>
+    <NavigateUrl>http://MotelMA.com</NavigateUrl>
+    <AlternateText>Two Story Building</AlternateText>
+    <Impressions>40</Impressions>
+    <Caption>Two Story Building</Caption>
+    <Keyword>small</Keyword>
+  </Ad>
+</Advertisements>
+  
